@@ -12,7 +12,7 @@ Other vanilla smelting recipes are, by default, not done in foundries, but that 
 There are also optional recipes (default off) that enable advantageous smelting ratios when using a supplemental refractory.
 
 ## Credits
-- Brevven ([Original mod](https://mods.factorio.com/mod/bzchlorine))
+- Brevven ([Original mod](https://mods.factorio.com/mod/bzfoundry))
 - [cackling fiend](https://mods.factorio.com/user/cackling.fiend) (Update to 2.0)
 - Wube (Graphics)
 
