@@ -44,7 +44,7 @@ if get_setting("bz-recipe-bypass") then
 end
 
 function util.is_foundry()
-  return mods.bzfoundry and not me.get_setting("bzfoundry-minimal")
+  return mods.bzfoundry2 and not me.get_setting("bzfoundry-minimal")
 end
 
 function should_force(options)

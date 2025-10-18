@@ -10,7 +10,7 @@ local foundry = table.deepcopy(data.raw["assembling-machine"]["electric-foundry"
 meld(foundry, {
   name = "foundry",
   next_upgrade = "electric-foundry",
-  icon = "__bzfoundry__/graphics/icons/foundry.png",
+  icon = "__bzfoundry2__/graphics/icons/foundry.png",
   minable = {mining_time = 0.2, result = "foundry"},
   energy_usage = "180kW",
   energy_source = {
@@ -32,8 +32,8 @@ meld(foundry, {
   },
 })
 foundry.graphics_set.animation.layers[1].filenames = {
-  "__bzfoundry__/graphics/entity/foundry/foundry-main-1.png",
-  "__bzfoundry__/graphics/entity/foundry/foundry-main-2.png"
+  "__bzfoundry2__/graphics/entity/foundry/foundry-main-1.png",
+  "__bzfoundry2__/graphics/entity/foundry/foundry-main-2.png"
 }
 
 data:extend({
@@ -41,7 +41,7 @@ data:extend({
   {
       type = "corpse",
       name = "foundry-remnants",
-      icon = "__bzfoundry__/graphics/icons/foundry.png",
+      icon = "__bzfoundry2__/graphics/icons/foundry.png",
       flags = {"placeable-neutral", "not-on-map"},
       hidden_in_factoriopedia = true,
       subgroup = "smelting-machine-remnants",
@@ -56,7 +56,7 @@ data:extend({
       remove_on_tile_placement = false,
       animation =
       {
-        filename = "__bzfoundry__/graphics/entity/foundry/foundry-remnants.png",
+        filename = "__bzfoundry2__/graphics/entity/foundry/foundry-remnants.png",
         line_length = 1,
         width = 494,
         height = 478,

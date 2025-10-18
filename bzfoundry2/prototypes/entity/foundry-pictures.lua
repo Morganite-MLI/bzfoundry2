@@ -2,7 +2,7 @@ local foundry_animation_speed = 0.16
 local frames = 128
 
 local function foundry_main_pictures()
-  return util.sprite_load("__bzfoundry__/graphics/entity/electric-foundry/foundry-main",
+  return util.sprite_load("__bzfoundry2__/graphics/entity/electric-foundry/foundry-main",
   {
     animation_speed = foundry_animation_speed,
     frame_count = frames,
@@ -11,7 +11,7 @@ local function foundry_main_pictures()
 end
 
 local function foundry_main_shadow_pictures()
-  return util.sprite_load("__bzfoundry__/graphics/entity/electric-foundry/foundry-shadow",
+  return util.sprite_load("__bzfoundry2__/graphics/entity/electric-foundry/foundry-shadow",
   {
     animation_speed = foundry_animation_speed,
     frame_count = frames,
@@ -25,7 +25,7 @@ local function foundry_working_pictures()
   {
     fadeout = true,
     animation =
-    util.sprite_load("__bzfoundry__/graphics/entity/electric-foundry/foundry-working",
+    util.sprite_load("__bzfoundry2__/graphics/entity/electric-foundry/foundry-working",
       {
         animation_speed = foundry_animation_speed,
         frame_count = frames,
@@ -41,7 +41,7 @@ local function foundry_lights_pictures()
     effect = "flicker",
     fadeout = true,
     animation =
-    util.sprite_load("__bzfoundry__/graphics/entity/electric-foundry/foundry-lights",
+    util.sprite_load("__bzfoundry2__/graphics/entity/electric-foundry/foundry-lights",
       {
         draw_as_glow = true,
         animation_speed = foundry_animation_speed,
@@ -57,7 +57,7 @@ local function foundry_status_lamp_pictures()
   return
   {
     animation =
-    util.sprite_load("__bzfoundry__/graphics/entity/electric-foundry/foundry-status-lamp",
+    util.sprite_load("__bzfoundry2__/graphics/entity/electric-foundry/foundry-status-lamp",
       {
         draw_as_glow = true,
         repeat_count = frames,

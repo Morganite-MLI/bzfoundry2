@@ -5,13 +5,13 @@ data:extend({
   {
     type = "item",
     name = "coke",
-    icon = "__bzfoundry__/graphics/icons/coke-icon.png",
+    icon = "__bzfoundry2__/graphics/icons/coke-icon.png",
     icon_size = 128,
     pictures = {
-      {size = 128, filename = "__bzfoundry__/graphics/icons/coke.png",   scale = 0.125},
-      {size = 128, filename = "__bzfoundry__/graphics/icons/coke-1.png", scale = 0.125},
-      {size = 128, filename = "__bzfoundry__/graphics/icons/coke-2.png", scale = 0.125},
-      {size = 128, filename = "__bzfoundry__/graphics/icons/coke-3.png", scale = 0.125},
+      {size = 128, filename = "__bzfoundry2__/graphics/icons/coke.png",   scale = 0.125},
+      {size = 128, filename = "__bzfoundry2__/graphics/icons/coke-1.png", scale = 0.125},
+      {size = 128, filename = "__bzfoundry2__/graphics/icons/coke-2.png", scale = 0.125},
+      {size = 128, filename = "__bzfoundry2__/graphics/icons/coke-3.png", scale = 0.125},
     },
     fuel_category = "chemical",
     fuel_value = "10MJ",
@@ -42,7 +42,7 @@ data:extend({
         energy_required = 3.2,
         enabled=false,
         icons = {
-          { icon = "__bzfoundry__/graphics/icons/coke-icon.png", icon_size = 128},
+          { icon = "__bzfoundry2__/graphics/icons/coke-icon.png", icon_size = 128},
           { icon = "__base__/graphics/icons/wood.png", icon_size = 64, scale=0.25, shift={8,-8}},
         },
       },

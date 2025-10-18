@@ -14,7 +14,7 @@ data:extend({
   {
     type = "item",
     name = "foundry",
-    icon = "__bzfoundry__/graphics/icons/foundry.png",
+    icon = "__bzfoundry2__/graphics/icons/foundry.png",
     icon_size = 64,
     subgroup = "founding-machines",
     order = "z[foundry]",
@@ -32,7 +32,7 @@ data:extend({
     type = "technology",
     name = "foundry",
     icon_size = 256,
-    icon = "__bzfoundry__/graphics/icons/technology/foundry.png",
+    icon = "__bzfoundry2__/graphics/icons/technology/foundry.png",
     prerequisites = {"automation"},
     effects = {
       {type = "unlock-recipe", recipe = "foundry"},
@@ -62,7 +62,7 @@ data:extend({
   {
     type = "item",
     name = "electric-foundry",
-    icon = "__bzfoundry__/graphics/icons/electric-foundry.png",
+    icon = "__bzfoundry2__/graphics/icons/electric-foundry.png",
     icon_size = 64,
     subgroup = "founding-machines",
     order = "z[foundryelectric]",
@@ -93,7 +93,7 @@ data:extend({
     type = "technology",
     name = "electric-foundry",
     icon_size = 256,
-    icon = "__bzfoundry__/graphics/icons/technology/electric-foundry.png",
+    icon = "__bzfoundry2__/graphics/icons/technology/electric-foundry.png",
     prerequisites = {"automation-3"},
     effects = {
       {type = "unlock-recipe", recipe = "electric-foundry"},
@@ -117,7 +117,7 @@ if util.me.founding_plates() then
       type = "technology",
       name = "advanced-founding",
       icons = {
-        {icon = "__bzfoundry__/graphics/icons/technology/foundry.png", icon_size = 256},
+        {icon = "__bzfoundry2__/graphics/icons/technology/foundry.png", icon_size = 256},
         (mods.bzcarbon and
          { icon = "__bzcarbon__/graphics/icons/graphite-2.png",
            icon_size = 128, scale=0.5, shift={32, -32}})
@@ -153,7 +153,7 @@ if util.me.founding_plates() then
         type = "technology",
         name = "advanced-founding-space",
         icons = {
-          {icon = "__bzfoundry__/graphics/icons/technology/foundry.png", icon_size = 256},
+          {icon = "__bzfoundry2__/graphics/icons/technology/foundry.png", icon_size = 256},
           (mods.bzcarbon and
            { icon = "__bzcarbon__/graphics/icons/graphite-2.png",
              icon_size = 128, scale=0.5, shift={32, -32}})

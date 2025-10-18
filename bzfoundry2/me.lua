@@ -1,6 +1,6 @@
 local me =  {}
 
-me.name = "bzfoundry"
+me.name = "bzfoundry2"
 
 function me.basic_founding()
   return mods.bztin or mods.bzaluminum2
