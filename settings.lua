@@ -42,7 +42,7 @@ data:extend({
 		name = "bzfoundry-minimal",
 		setting_type = "startup",
 		default_value = false,
-    hidden = not mods.bzaluminum,
+    hidden = not mods.bzaluminum2,
     order = "zza",
 	},
 })
