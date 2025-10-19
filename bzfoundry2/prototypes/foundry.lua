@@ -118,8 +118,8 @@ if util.me.founding_plates() then
       name = "advanced-founding",
       icons = {
         {icon = "__bzfoundry2__/graphics/icons/technology/foundry.png", icon_size = 256},
-        (mods.bzcarbon and
-         { icon = "__bzcarbon__/graphics/icons/graphite-2.png",
+        (mods["bzcarbon2"] and
+         { icon = "__bzcarbon2__/graphics/icons/graphite-2.png",
            icon_size = 128, scale=0.5, shift={32, -32}})
         or (mods.bzsilicon and
             { icon = "__bzsilicon__/graphics/icons/silica.png",
@@ -154,8 +154,8 @@ if util.me.founding_plates() then
         name = "advanced-founding-space",
         icons = {
           {icon = "__bzfoundry2__/graphics/icons/technology/foundry.png", icon_size = 256},
-          (mods.bzcarbon and
-           { icon = "__bzcarbon__/graphics/icons/graphite-2.png",
+          (mods["bzcarbon2"] and
+           { icon = "__bzcarbon2__/graphics/icons/graphite-2.png",
              icon_size = 128, scale=0.5, shift={32, -32}})
           or (mods.bzsilicon and
               { icon = "__bzsilicon__/graphics/icons/silica.png",

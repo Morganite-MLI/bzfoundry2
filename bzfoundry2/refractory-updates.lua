@@ -51,8 +51,8 @@ function make_recipe(recipe)
     icons = rusty_icons.of(data.raw.recipe[recipe.name])
     table.insert(
         icons,
-        (mods.bzcarbon and
-         { icon = "__bzcarbon__/graphics/icons/graphite-2.png",
+        (mods["bzcarbon2"] and
+         { icon = "__bzcarbon2__/graphics/icons/graphite-2.png",
            icon_size = 128, scale=0.125, shift={8, -8}})
         or (mods.bzsilicon and
             { icon = "__bzsilicon__/graphics/icons/silica.png",
@@ -82,7 +82,7 @@ end
 -- TODO make this more varied and interesting based on reality
 function get_refractories(recipe, name)
   local refractories = {}
-  if mods.bzcarbon then table.insert(refractories, "graphite") end
+  if mods["bzcarbon2"] then table.insert(refractories, "graphite") end
   if mods.bzsilicon then table.insert(refractories, "silica") end
   if #refractories < 2 and mods.bzzirconium and name ~= "zirconium-plate-refractory" then table.insert(refractories, "zirconia") end
   if #refractories < 2 and mods.bzaluminum2 and name ~= "aluminum-plate-refractory" then table.insert(refractories, "alumina") end
