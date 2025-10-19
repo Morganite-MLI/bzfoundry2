@@ -12,7 +12,7 @@
     "? space-exploration >= 0.7.34",
     "(?) Krastorio2 >= 2.0.8",
     "? bzsilicon >= 2.0.18",
-    "? bztungsten",
+    "? bztungsten2",
     "? bzzirconium >= 2.1.13",
     "! space-age"
   ]
