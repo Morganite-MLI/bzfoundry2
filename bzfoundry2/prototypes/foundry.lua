@@ -1,7 +1,7 @@
 local util = require("data-util")
 
 local foundry_ingredients = {{type="item", name="stone-brick", amount=20}, {type="item", name="iron-plate", amount=10}, {type="item", name="copper-plate", amount=5}}
-if mods.bzlead then table.insert(foundry_ingredients, {type="item", name="lead-plate", amount=8}) end
+if mods["bzlead2"] then table.insert(foundry_ingredients, {type="item", name="lead-plate", amount=8}) end
 if mods.Krastorio2 then
   table.insert(foundry_ingredients, {type="item", name="kr-sand", amount=10})
 elseif mods["aai-industry"] then
