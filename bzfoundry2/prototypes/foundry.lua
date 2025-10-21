@@ -124,8 +124,8 @@ if util.me.founding_plates() then
         or (mods["bzsilicon2"] and
             { icon = "__bzsilicon2__/graphics/icons/silica.png",
               icon_size = 64, scale=1, icon_mipmaps = 3, shift={32, -32}})
-        or (mods.bzzirconium and
-            { icon = "__bzzirconium__/graphics/icons/zirconia.png",
+        or (mods["bzzirconium2"] and
+            { icon = "__bzzirconium2__/graphics/icons/zirconia.png",
               icon_size = 128, scale=0.5, shift={32, -32}})
         or (mods.bzaluminum2 and
             { icon = "__bzaluminum2__/graphics/icons/alumina.png",
@@ -160,8 +160,8 @@ if util.me.founding_plates() then
           or (mods["bzsilicon2"] and
               { icon = "__bzsilicon2__/graphics/icons/silica.png",
                 icon_size = 64, scale=1, icon_mipmaps = 3, shift={32, -32}})
-          or (mods.bzzirconium and
-              { icon = "__bzzirconium__/graphics/icons/zirconia.png",
+          or (mods["bzzirconium2"] and
+              { icon = "__bzzirconium2__/graphics/icons/zirconia.png",
                 icon_size = 128, scale=0.5, shift={32, -32}})
           or (mods.bzaluminum2 and
               { icon = "__bzaluminum2__/graphics/icons/alumina.png",

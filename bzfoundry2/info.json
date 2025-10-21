@@ -13,7 +13,7 @@
     "(?) Krastorio2 >= 2.0.8",
     "? bzsilicon2 >= 2.0.19",
     "? bztungsten2",
-    "? bzzirconium >= 2.1.13",
+    "? bzzirconium2 >= 2.1.14",
     "! space-age"
   ]
 }

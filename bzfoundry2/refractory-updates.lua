@@ -57,8 +57,8 @@ function make_recipe(recipe)
         or (mods["bzsilicon2"] and
             { icon = "__bzsilicon2__/graphics/icons/silica.png",
               icon_size = 64, scale=0.25, icon_mipmaps = 3, shift={8, -8}})
-        or (mods.bzzirconium and
-            { icon = "__bzzirconium__/graphics/icons/zirconia.png",
+        or (mods["bzzirconium2"] and
+            { icon = "__bzzirconium2__/graphics/icons/zirconia.png",
               icon_size = 128, scale=0.125, shift={8, -8}})
         or (mods.bzaluminum2 and
             { icon = "__bzaluminum2__/graphics/icons/alumina.png",
@@ -84,7 +84,7 @@ function get_refractories(recipe, name)
   local refractories = {}
   if mods["bzcarbon2"] then table.insert(refractories, "graphite") end
   if mods["bzsilicon2"] then table.insert(refractories, "silica") end
-  if #refractories < 2 and mods.bzzirconium and name ~= "zirconium-plate-refractory" then table.insert(refractories, "zirconia") end
+  if #refractories < 2 and mods["bzzirconium2"] and name ~= "zirconium-plate-refractory" then table.insert(refractories, "zirconia") end
   if #refractories < 2 and mods.bzaluminum2 and name ~= "aluminum-plate-refractory" then table.insert(refractories, "alumina") end
   if #refractories < 2 then table.insert(refractories, "stone-brick") end
   return refractories
