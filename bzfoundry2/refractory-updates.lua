@@ -54,8 +54,8 @@ function make_recipe(recipe)
         (mods["bzcarbon2"] and
          { icon = "__bzcarbon2__/graphics/icons/graphite-2.png",
            icon_size = 128, scale=0.125, shift={8, -8}})
-        or (mods.bzsilicon and
-            { icon = "__bzsilicon__/graphics/icons/silica.png",
+        or (mods["bzsilicon2"] and
+            { icon = "__bzsilicon2__/graphics/icons/silica.png",
               icon_size = 64, scale=0.25, icon_mipmaps = 3, shift={8, -8}})
         or (mods.bzzirconium and
             { icon = "__bzzirconium__/graphics/icons/zirconia.png",
@@ -83,7 +83,7 @@ end
 function get_refractories(recipe, name)
   local refractories = {}
   if mods["bzcarbon2"] then table.insert(refractories, "graphite") end
-  if mods.bzsilicon then table.insert(refractories, "silica") end
+  if mods["bzsilicon2"] then table.insert(refractories, "silica") end
   if #refractories < 2 and mods.bzzirconium and name ~= "zirconium-plate-refractory" then table.insert(refractories, "zirconia") end
   if #refractories < 2 and mods.bzaluminum2 and name ~= "aluminum-plate-refractory" then table.insert(refractories, "alumina") end
   if #refractories < 2 then table.insert(refractories, "stone-brick") end
@@ -147,7 +147,7 @@ if util.me.founding_plates() then
     if (name == "steel-plate" or
         name == "imersium-plate" or
         name == "tungsten-carbide" or  -- exclude base recipe but not casting recipe
-        (name == "glass" and mods.bztin) or -- exclude glass when tin is in use, thematically
+        (name == "glass" and mods["bztin2"]) or -- exclude glass when tin is in use, thematically
         name == "se-naquium-ingot") then goto continue end
     local new_recipe = make_recipe(recipe )
     if new_recipe then

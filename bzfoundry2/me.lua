@@ -3,7 +3,7 @@ local me =  {}
 me.name = "bzfoundry2"
 
 function me.basic_founding()
-  return mods.bztin or mods.bzaluminum2
+  return mods["bztin2"] or mods.bzaluminum2
 end
 
 function me.woodcoke()
