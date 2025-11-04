@@ -6,8 +6,6 @@ if mods.Bio_Industries then
   util.remove_ingredient("foundry", "silica")
 end
 
-
-
 if data.raw.item["coke"] and not mods.Krastorio2 then
   if deadlock then
     deadlock.add_stack("coke", "__bzfoundry2__/graphics/icons/coke-stacked.png", "deadlock-stacking-1", 128)
@@ -17,6 +15,9 @@ if data.raw.item["coke"] and not mods.Krastorio2 then
   end
 end
 
+if mods["Krastorio2"] then
+  util.add_prerequisite("foundry", "automation-science-pack")
+end
 
 util.add_to_product("vtk-deepcore-mining-ore-chunk-refining-coal-focus", "vtk-deepcore-mining-coal-chunk", 8)
 util.add_to_product("vtk-deepcore-mining-ore-chunk-refining", "vtk-deepcore-mining-coal-chunk", 10)
