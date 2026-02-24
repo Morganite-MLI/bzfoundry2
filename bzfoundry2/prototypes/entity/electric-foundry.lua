@@ -33,7 +33,7 @@ data:extend({
       emissions_per_minute = { pollution = 2 },
       usage_priority = "secondary-input",
     },
-    allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+    allowed_effects = {"consumption", "speed", "productivity", "pollution", "quality"},
     damaged_trigger_effect = hit_effects.entity(),
     drawing_box_vertical_extension = 1.3,
     module_slots = 3,
