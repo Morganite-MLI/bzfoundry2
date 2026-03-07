@@ -8,6 +8,7 @@
   "homepage": "https://discord.gg/ufvFUJtVwk",
   "dependencies": [
     "base >= 2.0.0",
+    "bzlib",
     "rusty-locale >= 1.0.17",
     "? space-exploration >= 0.7.34",
     "(?) Krastorio2 >= 2.0.8",
