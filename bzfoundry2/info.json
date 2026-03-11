@@ -1,6 +1,6 @@
 {
   "name": "bzfoundry2",
-  "version": "2.0.2",
+  "version": "2.1.0",
   "factorio_version": "2.0",
   "title": "Foundry",
   "description": "Adds a foundry building for making alloys, etc.",

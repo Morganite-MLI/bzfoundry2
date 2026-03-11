@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.1.0
+Date: 11.03.2026
+  Changes:
+    - Switch to bzlib - Please install the new dependency
+    - Allow quality modules in the electric foundry
+---------------------------------------------------------------------------------------------------
 Version: 2.0.2
 Date: 05.11.2025
   Bug Fixes:
