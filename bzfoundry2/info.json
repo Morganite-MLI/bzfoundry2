@@ -1,6 +1,6 @@
 {
   "name": "bzfoundry2",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "factorio_version": "2.0",
   "title": "Foundry",
   "description": "Adds a foundry building for making alloys, etc.",
@@ -8,7 +8,7 @@
   "homepage": "https://discord.gg/ufvFUJtVwk",
   "dependencies": [
     "base >= 2.0.0",
-    "bzlib",
+    "bzlib >= 1.2.3",
     "rusty-locale >= 1.0.17",
     "? space-exploration >= 0.7.34",
     "(?) Krastorio2 >= 2.0.8",

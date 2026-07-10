@@ -1,6 +1,7 @@
 local me =  {}
 
-me.name = "bzfoundry2"
+me.name = "bzfoundry"
+me.filename = "bzfoundry2" --Probably not necessary for this mod, but just in case.
 
 function me.basic_founding()
   return mods["bztin2"] or mods.bzaluminum2
