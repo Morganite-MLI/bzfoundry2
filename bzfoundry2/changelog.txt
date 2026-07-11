@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 3.1.1
+Date: 10.07.2026
+  Compatibility:
+    - Updated for 2.1
+      Refractory recipes aren't properly localized; I'm not really sure what's going on there.
+---------------------------------------------------------------------------------------------------
 Version: 2.1.1
 Date: 10.07.2026
   Bug Fixes:
