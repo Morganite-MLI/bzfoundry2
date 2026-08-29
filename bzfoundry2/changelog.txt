@@ -1,4 +1,15 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.1.2
+Date: 15.08.2026
+  Info:
+    - The "We're very sorry" update.
+  Changes:
+    - Removed the Space Age derived graphics and audio, putting back Brevven's original art.
+      (The lighting effects have also been spruced up a bit, but no one will notice.)
+      If you want the Space Age foundry look back, install  bzfoundry2-sagraphics, which can be found in the optional dependencies of this mod... and requires owning Space Age to install.
+    - Minimal mode (which removes the Foundry building itself) can now be toggled even if bzaluminum2 is not installed.
+      It seems to work fine either way, and it was annoying that it could get stuck turned on.
+      Playing with the building turned on is still the recommended way to use this mod.
 Version: 3.1.1
 Date: 10.07.2026
   Compatibility:

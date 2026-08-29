@@ -1,5 +1,7 @@
 local util = require("data-util")
 
+local graphics_path = mods["bzfoundry2-sagraphics"] and "__bzfoundry2-sagraphics__" or "__bzfoundry2__"
+
 local foundry_ingredients = {{type="item", name="stone-brick", amount=20}, {type="item", name="iron-plate", amount=10}, {type="item", name="copper-plate", amount=5}}
 if mods["bzlead2"] then table.insert(foundry_ingredients, {type="item", name="lead-plate", amount=8}) end
 if mods.Krastorio2 then
@@ -14,7 +16,7 @@ data:extend({
   {
     type = "item",
     name = "foundry",
-    icon = "__bzfoundry2__/graphics/icons/foundry.png",
+    icon = graphics_path .. "/graphics/icons/foundry.png",
     icon_size = 64,
     subgroup = "founding-machines",
     order = "z[foundry]",
@@ -32,7 +34,7 @@ data:extend({
     type = "technology",
     name = "foundry",
     icon_size = 256,
-    icon = "__bzfoundry2__/graphics/icons/technology/foundry.png",
+    icon = graphics_path .. "/graphics/icons/technology/foundry.png",
     prerequisites = {"automation"},
     effects = {
       {type = "unlock-recipe", recipe = "foundry"},
@@ -62,8 +64,8 @@ data:extend({
   {
     type = "item",
     name = "electric-foundry",
-    icon = "__bzfoundry2__/graphics/icons/electric-foundry.png",
-    icon_size = 64,
+    icon = graphics_path .. "/graphics/icons/electric-foundry.png",
+    icon_size = mods["bzfoundry2-sagraphics"] and 64 or 128,
     subgroup = "founding-machines",
     order = "z[foundryelectric]",
     place_result = "electric-foundry",
@@ -93,7 +95,7 @@ data:extend({
     type = "technology",
     name = "electric-foundry",
     icon_size = 256,
-    icon = "__bzfoundry2__/graphics/icons/technology/electric-foundry.png",
+    icon = graphics_path .. "/graphics/icons/technology/electric-foundry.png",
     prerequisites = {"automation-3"},
     effects = {
       {type = "unlock-recipe", recipe = "electric-foundry"},
@@ -117,7 +119,7 @@ if util.me.founding_plates() then
       type = "technology",
       name = "advanced-founding",
       icons = {
-        {icon = "__bzfoundry2__/graphics/icons/technology/foundry.png", icon_size = 256},
+        {icon = graphics_path .. "/graphics/icons/technology/foundry.png", icon_size = 256},
         (mods["bzcarbon2"] and
          { icon = "__bzcarbon2__/graphics/icons/graphite-2.png",
            icon_size = 128, scale=0.5, shift={32, -32}})
@@ -153,7 +155,7 @@ if util.me.founding_plates() then
         type = "technology",
         name = "advanced-founding-space",
         icons = {
-          {icon = "__bzfoundry2__/graphics/icons/technology/foundry.png", icon_size = 256},
+          {icon = graphics_path .. "/graphics/icons/technology/foundry.png", icon_size = 256},
           (mods["bzcarbon2"] and
            { icon = "__bzcarbon2__/graphics/icons/graphite-2.png",
              icon_size = 128, scale=0.5, shift={32, -32}})
