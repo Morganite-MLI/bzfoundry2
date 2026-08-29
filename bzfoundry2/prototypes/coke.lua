@@ -24,7 +24,7 @@ data:extend({
   {
     type = "recipe",
     name = "coke",
-    category = "founding",
+    categories = {"founding"},
     ingredients = {{type="item", name="coal", amount=2}},
     results = {{ type = "item", name = "coke", amount = 1 }},
     energy_required = 3.2,
@@ -36,7 +36,7 @@ data:extend({
       {
         type = "recipe",
         name = "woodcoke",
-        category = "founding",
+        categories = {"founding"},
         ingredients = {{type="item", name="coal", amount=1}, {type="item", name="wood", amount=2}},
         results = {{ type = "item", name = "coke", amount = 1 }},
         energy_required = 3.2,
@@ -53,7 +53,7 @@ data:extend({
   {
     type = "recipe",
     name = "solid-fuel-from-coal",
-    category = "founding",
+    categories = {"founding"},
     ingredients = {{type="item", name="coal", amount=4}},
     results = {{ type = "item", name = "solid-fuel", amount = 1 }},
     energy_required = 3.2,
@@ -65,7 +65,7 @@ data:extend({
       {
         type = "recipe",
         name = "woodcoke",
-        category = "founding",
+        categories = {"founding"},
         ingredients = {{type="item", name="coal", amount=3}, {type="item", name="wood", amount=2}},
         results = {{ type = "item", name = "solid-fuel", amount = 1 }},
         energy_required = 3.2,

@@ -10,6 +10,11 @@ Date: 15.08.2026
     - Minimal mode (which removes the Foundry building itself) can now be toggled even if bzaluminum2 is not installed.
       It seems to work fine either way, and it was annoying that it could get stuck turned on.
       Playing with the building turned on is still the recommended way to use this mod.
+Version: 3.1.1
+Date: 10.07.2026
+  Compatibility:
+    - Updated for 2.1
+      Refractory recipes aren't properly localized; I'm not really sure what's going on there.
 ---------------------------------------------------------------------------------------------------
 Version: 2.1.1
 Date: 10.07.2026

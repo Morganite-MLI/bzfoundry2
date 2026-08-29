@@ -1,5 +1,6 @@
-local rusty_locale = require("__rusty-locale__.locale")
-local rusty_icons = require("__rusty-locale__.icons")
+local flib_locale = require("__flib__.locale")
+local flib_data_util = require("__flib__.data-util")
+local flib_prototypes = require("__flib__.prototypes")
 local futil = require("util")
 local util = require("data-util")
 
@@ -46,9 +47,18 @@ function make_recipe(recipe)
     r.main_product = found_result
     r.results = {}
     r.enabled = false
-    r.category = recipe.category == "casting" and "casting" or "founding"
+    r.categories = {util.contains(recipe.categories, "casting") and "casting" or "founding"}
     r.subgroup = data.raw.item[found_result] and data.raw.item[found_result].subgroup or "foundry-intermediate"
-    icons = rusty_icons.of(data.raw.recipe[recipe.name])
+    icons = flib_data_util.create_icons(data.raw.recipe[recipe.name])
+    if not icons then
+    log(serpent.block(data.raw.recipe[recipe.name]))
+        local mpp = data.raw.recipe[recipe.name].main_product
+        log(serpent.block(mpp))
+        if not mpp then mpp = data.raw.recipe[recipe.name].results[1].name end
+        log(serpent.block(mpp))
+        mpp = flib_prototypes.find("item", mpp)
+        icons = flib_data_util.create_icons(mpp) 
+    end
     table.insert(
         icons,
         (mods["bzcarbon2"] and
@@ -67,7 +77,7 @@ function make_recipe(recipe)
              icon_size = 64, scale=0.25, icon_mipmaps = 4, shift={8, -8}}
     )
     r.icons = icons
-    locale = rusty_locale.of_recipe(data.raw.recipe[recipe.name])
+    locale = flib_locale.of_recipe(data.raw.recipe[recipe.name])
     r.localised_name = {"recipe-name.with-refractory", locale.name}
     r.results = new_results
     make_ingredients_and_products(r, r.name)
@@ -130,7 +140,7 @@ function make_ingredients_and_products(r, name)
   end
   for i, refractory in pairs(refractories) do
     table.insert(r.results, {type="item", name=refractory, amount=refractory_amount, ignored_by_productivity=refractory_amount,
-        ignored_by_stats=refractory_amount, probability=get_probability(#refractories)})
+        ignored_by_stats=refractory_amount, independent_probability=get_probability(#refractories)})
   end
 end
 
@@ -142,8 +152,9 @@ end
 
 if util.me.founding_plates() then
   local new_recipes = {}
-  for name, recipe in pairs(data.raw.recipe) do 
-    if not (recipe.category == "smelting" or (mods["space-exploration"] and recipe.category == "casting")) then goto continue end
+  for name, recipe in pairs(data.raw.recipe) do
+    if not recipe.categories then goto continue end
+    if not (util.contains(recipe.categories, "smelting") or (mods["space-exploration"] and util.contains(recipe.categories, "casting"))) then goto continue end
     if (name == "steel-plate" or
         name == "imersium-plate" or
         name == "tungsten-carbide" or  -- exclude base recipe but not casting recipe
