@@ -13,7 +13,7 @@ data:extend({
       {size = 128, filename = "__bzfoundry2__/graphics/icons/coke-2.png", scale = 0.125},
       {size = 128, filename = "__bzfoundry2__/graphics/icons/coke-3.png", scale = 0.125},
     },
-    fuel_category = "chemical",
+    fuel_categories = {"chemical"},
     fuel_value = "10MJ",
     fuel_acceleration_multiplier = 1.2,
     fuel_top_speed_multiplier = 1,
